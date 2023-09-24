@@ -1,9 +1,0 @@
-media/
-static/
-tmp/
-passenger_wsgi.py
-stderr.log
-__pycache__/
-**/migrations/*
-.idea
-.vscode
