@@ -1,0 +1,9 @@
+[
+    {
+        "pk": 1, 
+        "model": "locations.country",
+        "fields": {
+            "name": "\u0627\u06cc\u0631\u0627\u0646"
+        }
+    }
+]

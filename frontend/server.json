@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "website",
+            "script": "yarn start --port 3000",
+            "args" : "start"
+        }
+    ]
+}

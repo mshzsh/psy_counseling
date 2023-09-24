@@ -1,0 +1,100 @@
+[
+  {
+    "day_number": 0,
+    "day_name": "Saturday",
+    "timetable": [
+      {
+        "id": 1,
+        "time": "08:00-15:00"
+      },
+      {
+        "id": 2,
+        "time": "15:00-22:00"
+      }
+    ]
+  },
+  {
+    "day_number": 1,
+    "day_name": "Sunday",
+    "timetable": [
+      {
+        "id": 3,
+        "time": "08:00-15:00"
+      },
+      {
+        "id": 4,
+        "time": "15:00-22:00"
+      }
+    ]
+  },
+  {
+    "day_number": 2,
+    "day_name": "Monday",
+    "timetable": [
+      {
+        "id": 5,
+        "time": "08:00-15:00"
+      },
+      {
+        "id": 6,
+        "time": "15:00-22:00"
+      }
+    ]
+  },
+  {
+    "day_number": 3,
+    "day_name": "Tuesday",
+    "timetable": [
+      {
+        "id": 7,
+        "time": "08:00-15:00"
+      },
+      {
+        "id": 8,
+        "time": "15:00-22:00"
+      }
+    ]
+  },
+  {
+    "day_number": 4,
+    "day_name": "Wednesday",
+    "timetable": [
+      {
+        "id": 9,
+        "time": "08:00-15:00"
+      },
+      {
+        "id": 10,
+        "time": "15:00-22:00"
+      }
+    ]
+  },
+  {
+    "day_number": 5,
+    "day_name": "Thursday",
+    "timetable": [
+      {
+        "id": 11,
+        "time": "08:00-15:00"
+      },
+      {
+        "id": 12,
+        "time": "15:00-22:00"
+      }
+    ]
+  },
+  {
+    "day_number": 6,
+    "day_name": "Friday",
+    "timetable": [
+      {
+        "id": 13,
+        "time": "08:00-15:00"
+      },
+      {
+        "id": 14,
+        "time": "15:00-22:00"
+      }
+    ]
+  }
+]

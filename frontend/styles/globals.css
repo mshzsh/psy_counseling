@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 100;
+  src: url('../public/fonts/peyda/PEYDA-THIN.TTF');
+}
+@font-face {
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 200;
+  src: url('../public/fonts/peyda/PEYDA-EXTRALIGHT.TTF');
+}
+@font-face {
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../public/fonts/peyda/PEYDA-LIGHT.TTF');
+}
+@font-face {
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/peyda/PEYDA-REGULAR.TTF');
+}
+@font-face {
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../public/fonts/peyda/PEYDA-MEDIUM.TTF');
+}
+@font-face {
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/fonts/peyda/PEYDA-SEMIBOLD.TTF');
+}
+@font-face {
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/fonts/peyda/PEYDA-BOLD.TTF');
+}
+@font-face {
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 800;
+  src: url('../public/fonts/peyda/PEYDA-EXTRABOLD.TTF');
+}
+@font-face {
+  font-family: peyda;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../public/fonts/peyda/PEYDA-BLACK.TTF');
+}
+
+/* default css STARTS */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+}
+body {
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* default css ENDS */
+
+@layer base {
+  :root {
+    --text-primary: 0 0 0;
+    --text-secondary: 0 0 0;
+    --text-disabled: 0 0 0;
+    --text-dark-primary: 255 255 255;
+    --text-dark-secondary: 255 255 255;
+    --text-dark-disabled: 255 255 255;
+    --divider-primary: 0 0 0;
+    --divider-dark-primary: 255 255 255;
+  }
+  html {
+    font-family: peyda;
+  }
+  /* h1 {
+    @apply text-2xl;
+  } */
+}
+
+/* @layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+  .card {
+    background-color: theme('colors.white');
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    box-shadow: theme('boxShadow.xl');
+  }
+} */
+
+scrollbar-thin::-webkit-scrollbar {
+  width: 3px;
+}
+
+.scroll {
+  overflow-y: scroll;
+  scrollbar-color: #cbcbcb #ededed;
+  scrollbar-width: thin;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  scrollbar-width: thin;
+}
+
+.hourClock {
+  animation-name: test;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes test {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.icon-animation {
+  animation-name: iconAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes iconAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.test {
+  background-color: white !important;
+}

@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  goodmood-db:
+    restart: unless-stopped
+    container_name: goodmood-db
+    image: postgis/postgis:14-3.3
+    environment:
+      - POSTGRES_DB=goodmood_db
+      - POSTGRES_USER=goodmood_usr
+      - POSTGRES_PASSWORD=12345678
+    ports:
+      - 4900:5432
+    volumes:
+      - goodmood-db-volume:/var/lib/postgresql
+    networks:
+      - goodmood-net
+
+  goodmood-app:
+    restart: unless-stopped
+    container_name: goodmood-app
+    depends_on:
+      - goodmood-db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8009:8095"
+    volumes:
+      - ./:/srv/goodmood
+      - goodmood-static-volume:/srv/static
+      - goodmood-media-volume:/srv/media
+    networks:
+      - goodmood-net
+    environment:
+      - PRODUCTION=False
+
+
+networks:
+  goodmood-net:
+    name: goodmood-net
+
+volumes:
+  goodmood-db-volume:
+  goodmood-static-volume:
+  goodmood-media-volume:

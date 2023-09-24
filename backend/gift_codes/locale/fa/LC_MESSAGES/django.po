@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-25 14:24+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: exceptions.py:8
+msgid "Invalid Mobile"
+msgstr "شماره موبایل اشتباه است"
+
+#: exceptions.py:13
+msgid "Gift code not found"
+msgstr "کد تخفیف اشتباه است"
+
+#: exceptions.py:18
+msgid "Gift code has inactive"
+msgstr "این کد تخفیف فعال نمیباشد"
+
+#: exceptions.py:23
+msgid "Gift code limit error"
+msgstr "امکان استفاده از این کد تخفیف وجود ندارد"
+
+#: exceptions.py:28
+msgid "Gift code has expired"
+msgstr "کد تخفیف منقضی شده است"
+
+#: exceptions.py:33
+msgid "This gift code is not for this user"
+msgstr "امکان استفاده از این کد تخفیف برای شما وجود ندارد"
+
+#: exceptions.py:38
+msgid "Gift code has been used for this user"
+msgstr "شما قبلا از این کد تخفیف استفاده کرده اید"
+
+#: exceptions.py:43
+msgid "Owner and code parameters are required"
+msgstr "کاربر و کد ضروری میباشند"
+
+#: exceptions.py:48
+msgid "User not found"
+msgstr "کاربر یافت نشد"
+
+#: exceptions.py:53
+msgid "Amount must be integer"
+msgstr "قیمت باید عددی باشد"
